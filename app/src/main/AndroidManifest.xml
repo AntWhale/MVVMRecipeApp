@@ -10,8 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MVVMRecipeApp">
         <activity
+            android:name=".AddEidtNoteActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

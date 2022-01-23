@@ -18,6 +18,6 @@ interface NoteDao {
     suspend fun deleteAllNotes()
 
     @Query("SELECT * FROM note_table ORDER BY priority DESC")
-    suspend fun getAllNotes(): LiveData<List<Note>>
+    fun getAllNotes(): LiveData<List<Note>>
 
 }
